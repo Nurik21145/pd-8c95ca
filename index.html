@@ -1,0 +1,174 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Итоги по маркетингу · практикум</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;500;600&display=swap">
+<style>:root{--font-anthropic-sans:Manrope,system-ui,sans-serif;--cds-gap-lg:24px;--cds-gap-md:16px;--cds-pad-lg:20px;--cds-font-size-caption:12px;color-scheme:dark}html,body{margin:0;background:#0b0d0c}*{box-sizing:border-box}
+
+.mk{--bg:#0b0d0c;--pn:#141816;--ln:#3a413d;--fg:#f4f7f5;--mt:#9fa8a3;--gr:#36D068;--gr2:#1f7a3d;--rd:#F0705A;--am:#E9A23B;background:var(--bg);color:var(--fg);padding:clamp(16px,3vw,32px);font-family:var(--font-anthropic-sans);min-height:100%}
+.mk-wrap{max-width:1180px;margin-inline:auto;display:grid;gap:var(--cds-gap-lg)}
+.mk-top{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+.mk-eye{color:var(--mt);font-size:var(--cds-font-size-caption);letter-spacing:.06em}
+.mk h1{font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(28px,4vw,42px);line-height:1.05;margin:4px 0 0;color:var(--fg)}
+.mk-chips{display:flex;flex-wrap:wrap;gap:8px}
+.mk-chip{border:1px solid var(--gr2);background:rgba(54,208,104,.08);color:var(--fg);border-radius:999px;padding:6px 14px;font-size:13px}
+.mk-flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 14px;align-items:start}
+.mk-step{display:grid;gap:10px;position:relative}
+.mk-box{border:1px dashed var(--ln);background:var(--pn);border-radius:12px;padding:14px 12px;text-align:center;min-width:0}
+.mk-box.hl{border-color:var(--gr);background:rgba(54,208,104,.07)}
+.mk-box.bud{border-color:#7a3b33;background:rgba(240,112,90,.07)}
+.mk-l{color:var(--mt);font-size:12px;line-height:1.3}
+.mk-v{font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;font-size:clamp(22px,2.6vw,32px);line-height:1.2;font-variant-numeric:tabular-nums;color:var(--fg)}
+.mk-box.hl .mk-v{color:var(--gr)}
+.mk-ratio{border:1px dashed var(--ln);border-radius:10px;padding:7px 8px;text-align:center;margin-inline:auto;min-width:min(100%,120px)}
+.mk-ratio .mk-v{font-size:18px}
+.mk-step:not(:last-child)::after{content:"";position:absolute;right:-12px;top:30px;width:10px;height:10px;border-top:2px solid var(--mt);border-right:2px solid var(--mt);transform:rotate(45deg)}
+@media (max-width:760px){.mk-flow{grid-template-columns:minmax(0,1fr);gap:18px}.mk-step:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-14px;transform:translateX(-50%) rotate(135deg)}.mk-step{grid-template-columns:minmax(0,1fr) auto;align-items:center}}
+.mk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:var(--cds-gap-md)}
+.mk-card{background:var(--pn);border:1px dashed var(--ln);border-radius:12px;padding:var(--cds-pad-lg);min-width:0}
+.mk-card h2{font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.02em;margin:0 0 2px;color:var(--fg)}
+.mk-note{color:var(--mt);font-size:12px;margin:0 0 12px}
+.mk-scroll{overflow-x:auto}
+.mk table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;color:var(--fg)}
+.mk th{color:var(--mt);font-weight:500;text-align:right;padding:7px 8px;border-bottom:1px solid var(--ln);white-space:nowrap;font-size:12px}
+.mk td{text-align:right;padding:8px;border-bottom:1px solid #232825;white-space:nowrap}
+.mk th:first-child,.mk td:first-child{text-align:left;white-space:normal;min-width:150px}
+.mk tbody tr:last-child td{border-bottom:0}
+.mk .ok{color:var(--gr)}.mk .bad{color:var(--rd)}.mk .mid{color:var(--am)}.mk .dim{color:var(--mt)}
+.mk-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.mk-tabs button{background:transparent;color:var(--mt);border:1px solid var(--ln);border-radius:999px;padding:5px 12px;font:inherit;font-size:12px;cursor:pointer}
+.mk-tabs button[aria-pressed="true"]{background:var(--gr);border-color:var(--gr);color:#08130c;font-weight:600}
+.mk-tabs button:focus-visible{outline:2px solid var(--gr);outline-offset:2px}
+.mk-chart{position:relative;min-height:260px}
+.mk-tip{position:absolute;pointer-events:none;background:#1f2522;color:var(--fg);border:1px solid var(--ln);border-radius:8px;padding:6px 9px;font-size:12px;white-space:nowrap;z-index:3}
+.mk-foot{color:var(--mt);font-size:12px;margin:0}
+</style></head><body>
+<div class="mk"><div class="mk-wrap">
+<header class="mk-top">
+<div><div class="mk-eye">МИР НЕЙРОКОНТЕНТА · ПРАКТИКУМ 4–5 НОЯБРЯ</div><h1>Итоги по маркетингу</h1></div>
+<div class="mk-chips"><span class="mk-chip" data-draw="period" data-source="kpi" data-field="period">—</span><span class="mk-chip">Meta · кабинет ИП-1</span><span class="mk-chip">Регистрации: Тильда</span></div>
+</header>
+<section class="mk-flow" id="funnel" aria-label="Воронка рекламы">
+<div class="mk-step"><div class="mk-box bud"><div class="mk-l">Бюджет, $</div><div class="mk-v" data-draw="f_spend" data-source="kpi" data-field="spend">—</div></div><div class="mk-ratio"><div class="mk-l">CPM, $</div><div class="mk-v" data-draw="f_cpm" data-source="kpi" data-field="cpm">—</div></div></div>
+<div class="mk-step"><div class="mk-box"><div class="mk-l">Показы</div><div class="mk-v" data-draw="f_imp" data-source="kpi" data-field="impressions">—</div></div><div class="mk-ratio"><div class="mk-l">CTR</div><div class="mk-v" data-draw="f_ctr" data-source="kpi" data-field="ctr">—</div></div></div>
+<div class="mk-step"><div class="mk-box"><div class="mk-l">Клики</div><div class="mk-v" data-draw="f_clk" data-source="kpi" data-field="clicks">—</div></div><div class="mk-ratio"><div class="mk-l">Цена клика, $</div><div class="mk-v" data-draw="f_cpc" data-source="kpi" data-field="cpc">—</div></div></div>
+<div class="mk-step"><div class="mk-box"><div class="mk-l">Визиты на сайт</div><div class="mk-v" data-draw="f_ses" data-source="kpi" data-field="sessions">—</div></div><div class="mk-ratio"><div class="mk-l">CR визит → рег</div><div class="mk-v" data-draw="f_cr" data-source="kpi" data-field="cr">—</div></div></div>
+<div class="mk-step"><div class="mk-box hl"><div class="mk-l">Регистрации</div><div class="mk-v" data-draw="f_regs" data-source="kpi" data-field="regs">—</div></div><div class="mk-ratio"><div class="mk-l">Цена реги, $</div><div class="mk-v" data-draw="f_cpl" data-source="kpi" data-field="cpl">—</div></div></div>
+</section>
+<section class="mk-card" id="dynamics"><h2>Динамика показателей</h2><p class="mk-note">По дням, реклама Meta. Выберите метрику.</p>
+<div class="mk-tabs" role="group" aria-label="Метрика"><button type="button" data-m="regs" aria-pressed="true">Регистрации</button><button type="button" data-m="spend" aria-pressed="false">Бюджет</button><button type="button" data-m="cpl" aria-pressed="false">Цена реги</button><button type="button" data-m="cr" aria-pressed="false">CR визит → рег</button><button type="button" data-m="ctr" aria-pressed="false">CTR</button><button type="button" data-m="cpm" aria-pressed="false">CPM</button></div>
+<div class="mk-chart" data-draw="c_dyn" data-source="daily"></div></section>
+<div class="mk-grid">
+<section class="mk-card" id="sources"><h2>Свод по источникам</h2><p class="mk-note">Визиты и регистрации из Тильды по UTM. Бюджет есть только у рекламы Meta.</p><div class="mk-scroll"><table data-source="sources" data-row-key="source"><thead><tr><th data-field="source">Источник</th><th data-field="sessions">Визиты</th><th data-field="leads">Реги</th><th data-field="cr">CR</th><th data-field="spend">Бюджет, $</th><th data-field="cpl">Цена реги</th></tr></thead><tbody data-draw="b_src"></tbody></table></div></section>
+<section class="mk-card" id="creatives"><h2>Креативы</h2><p class="mk-note">Реги по ID группы в UTM. Копии групп объединены по названию.</p><div class="mk-scroll"><table data-source="creatives" data-row-key="name"><thead><tr><th data-field="name">Креатив</th><th data-field="spend">Бюджет, $</th><th data-field="clicks">Клики</th><th data-field="leads">Реги</th><th data-field="cr">CR клик → рег</th><th data-field="cpl">Цена реги</th><th data-field="status">Статус</th></tr></thead><tbody data-draw="b_cr"></tbody></table></div><p class="mk-note" data-draw="cr_note" data-source="tilda_creatives">—</p></section>
+</div>
+<p class="mk-foot" data-draw="foot" data-source="kpi" data-field="as_of">—</p>
+</div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const RAW = {"tilda_daily": [{"day": "2026-10-28", "regs": "152", "meta_leads": "137", "meta_sessions": "682", "as_of": "2026-11-02T12:30:00+03:00"}, {"day": "2026-10-29", "regs": "136", "meta_leads": "86", "meta_sessions": "304", "as_of": "2026-11-02T12:30:00+03:00"}, {"day": "2026-10-30", "regs": "99", "meta_leads": "15", "meta_sessions": "136", "as_of": "2026-11-02T12:30:00+03:00"}, {"day": "2026-10-31", "regs": "159", "meta_leads": "81", "meta_sessions": "618", "as_of": "2026-11-02T12:30:00+03:00"}, {"day": "2026-11-01", "regs": "109", "meta_leads": "47", "meta_sessions": "549", "as_of": "2026-11-02T12:30:00+03:00"}], "tilda_sources": [{"source": "Реклама Meta", "kind": "meta", "sessions": "2289", "leads": "366"}, {"source": "Ретаргет Meta", "kind": "retarget", "sessions": "20", "leads": "2"}, {"source": "Instagram: автоворонка и директ", "kind": "organic", "sessions": "300", "leads": "202"}, {"source": "Instagram: соцсеть", "kind": "organic", "sessions": "169", "leads": "63"}, {"source": "Telegram", "kind": "organic", "sessions": "78", "leads": "17"}, {"source": "Прочие метки", "kind": "organic", "sessions": "28", "leads": "0"}], "tilda_creatives": [{"adset_id": "52584823505536", "sessions": "249", "leads": "59"}, {"adset_id": "52584823681736", "sessions": "296", "leads": "58"}, {"adset_id": "52584823752536", "sessions": "131", "leads": "32"}, {"adset_id": "52584823588936", "sessions": "135", "leads": "37"}, {"adset_id": "52584823630336", "sessions": "106", "leads": "11"}, {"adset_id": "52584821736536", "sessions": "180", "leads": "38"}, {"adset_id": "none", "sessions": "1166", "leads": "128"}], "meta_ads": [{"day": "2026-10-28", "adset_id": "52584821736536", "adset_name": "Как сделать 50 рилсов", "status": "DISAPPROVED", "spend": 17.14, "impressions": 6211, "link_click": 137}, {"day": "2026-10-29", "adset_id": "52584821736536", "adset_name": "Как сделать 50 рилсов", "status": "DISAPPROVED", "spend": 1.59, "impressions": 524, "link_click": 13}, {"day": "2026-10-28", "adset_id": "52584823505536", "adset_name": "Монтаж за 15 минут", "status": "CAMPAIGN_PAUSED", "spend": 15.07, "impressions": 5521, "link_click": 104}, {"day": "2026-10-29", "adset_id": "52584823505536", "adset_name": "Монтаж за 15 минут", "status": "CAMPAIGN_PAUSED", "spend": 13.71, "impressions": 4813, "link_click": 100}, {"day": "2026-10-30", "adset_id": "52584823505536", "adset_name": "Монтаж за 15 минут", "status": "CAMPAIGN_PAUSED", "spend": 11.4, "impressions": 2800, "link_click": 49}, {"day": "2026-10-31", "adset_id": "52584823505536", "adset_name": "Монтаж за 15 минут", "status": "CAMPAIGN_PAUSED", "spend": 53.04, "impressions": 11112, "link_click": 207}, {"day": "2026-11-01", "adset_id": "52584823505536", "adset_name": "Монтаж за 15 минут", "status": "CAMPAIGN_PAUSED", "spend": 29.61, "impressions": 8541, "link_click": 143}, {"day": "2026-10-28", "adset_id": "52584823588936", "adset_name": "Я не смонтировал этот ролик", "status": "DISAPPROVED", "spend": 13.62, "impressions": 4659, "link_click": 72}, {"day": "2026-10-29", "adset_id": "52584823588936", "adset_name": "Я не смонтировал этот ролик", "status": "DISAPPROVED", "spend": 13.45, "impressions": 3651, "link_click": 67}, {"day": "2026-10-30", "adset_id": "52584823588936", "adset_name": "Я не смонтировал этот ролик", "status": "DISAPPROVED", "spend": 0.14, "impressions": 42, "link_click": 0}, {"day": "2026-10-28", "adset_id": "52584823630336", "adset_name": "Этот рилс принес мне 2к заявок", "status": "CAMPAIGN_PAUSED", "spend": 13.94, "impressions": 4372, "link_click": 61}, {"day": "2026-10-29", "adset_id": "52584823630336", "adset_name": "Этот рилс принес мне 2к заявок", "status": "CAMPAIGN_PAUSED", "spend": 9.53, "impressions": 1968, "link_click": 24}, {"day": "2026-10-30", "adset_id": "52584823630336", "adset_name": "Этот рилс принес мне 2к заявок", "status": "CAMPAIGN_PAUSED", "spend": 0.23, "impressions": 33, "link_click": 0}, {"day": "2026-10-31", "adset_id": "52584823630336", "adset_name": "Этот рилс принес мне 2к заявок", "status": "CAMPAIGN_PAUSED", "spend": 32.84, "impressions": 7844, "link_click": 76}, {"day": "2026-11-01", "adset_id": "52584823630336", "adset_name": "Этот рилс принес мне 2к заявок", "status": "CAMPAIGN_PAUSED", "spend": 16.09, "impressions": 4629, "link_click": 49}, {"day": "2026-10-28", "adset_id": "52584823681736", "adset_name": "Контент завод", "status": "CAMPAIGN_PAUSED", "spend": 16.67, "impressions": 5617, "link_click": 120}, {"day": "2026-10-29", "adset_id": "52584823681736", "adset_name": "Контент завод", "status": "CAMPAIGN_PAUSED", "spend": 11.03, "impressions": 3087, "link_click": 68}, {"day": "2026-10-30", "adset_id": "52584823681736", "adset_name": "Контент завод", "status": "CAMPAIGN_PAUSED", "spend": 10.7, "impressions": 2555, "link_click": 41}, {"day": "2026-10-31", "adset_id": "52584823681736", "adset_name": "Контент завод", "status": "CAMPAIGN_PAUSED", "spend": 56.13, "impressions": 11733, "link_click": 177}, {"day": "2026-11-01", "adset_id": "52584823681736", "adset_name": "Контент завод", "status": "CAMPAIGN_PAUSED", "spend": 44.98, "impressions": 10981, "link_click": 180}, {"day": "2026-10-28", "adset_id": "52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства", "status": "CAMPAIGN_PAUSED", "spend": 14.13, "impressions": 4997, "link_click": 75}, {"day": "2026-10-29", "adset_id": "52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства", "status": "CAMPAIGN_PAUSED", "spend": 9.8, "impressions": 2822, "link_click": 41}, {"day": "2026-10-30", "adset_id": "52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства", "status": "CAMPAIGN_PAUSED", "spend": 0.38, "impressions": 109, "link_click": 3}, {"day": "2026-10-31", "adset_id": "52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства", "status": "CAMPAIGN_PAUSED", "spend": 32.87, "impressions": 8237, "link_click": 86}, {"day": "2026-11-01", "adset_id": "52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства", "status": "CAMPAIGN_PAUSED", "spend": 15.64, "impressions": 3762, "link_click": 58}, {"day": "2026-11-02", "adset_id": "copy-52584823505536", "adset_name": "Монтаж за 15 минут — Копия", "status": "ACTIVE", "spend": 0, "impressions": 0, "link_click": 0}, {"day": "2026-11-02", "adset_id": "copy-52584823588936", "adset_name": "Я не смонтировал этот ролик — Копия", "status": "ACTIVE", "spend": 0, "impressions": 0, "link_click": 0}, {"day": "2026-11-02", "adset_id": "copy-52584823630336", "adset_name": "Этот рилс принес мне 2к заявок — Копия", "status": "ACTIVE", "spend": 0, "impressions": 0, "link_click": 0}, {"day": "2026-11-02", "adset_id": "copy-52584823681736", "adset_name": "Контент завод — Копия", "status": "ACTIVE", "spend": 0, "impressions": 0, "link_click": 0}, {"day": "2026-11-02", "adset_id": "copy-52584823752536", "adset_name": "Клоуд уничтожил маркетинговые агентства — Копия", "status": "ACTIVE", "spend": 0, "impressions": 0, "link_click": 0}]};
+(() => {
+  const days = [...new Set(RAW.meta_ads.map((r) => r.day))].sort();
+  RAW.meta_daily = days.map((day) => { const r = RAW.meta_ads.filter((x) => x.day === day); return {day, spend: d3.sum(r, (x) => x.spend), impressions: d3.sum(r, (x) => x.impressions), link_click: d3.sum(r, (x) => x.link_click)}; });
+  const calcs = {}, cache = {}, draws = {};
+  window.dash = {
+    loader() {},
+    calc(id, o) { calcs[id] = o; },
+    data(id) { if (RAW[id]) return {status: 'ok', data: RAW[id]}; if (calcs[id]) { if (!cache[id]) cache[id] = calcs[id].fn(...calcs[id].inputs.map((i) => dash.data(i).data)); return {status: 'ok', data: cache[id]}; } return {status: 'missing', data: []}; },
+    draw(name, fn) { if (fn) draws[name] = fn; const f = draws[name]; if (f) document.querySelectorAll('[data-draw="' + name + '"]').forEach((el) => f(el)); },
+    onData(fn) { fn(); }
+  };
+  let t; addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => ['c_dyn'].forEach((n) => dash.draw(n)), 150); });
+})();
+</script>
+<script>
+const unwrap = (answer) => { const o = typeof answer === 'string' ? JSON.parse(answer) : answer; if (o && o.error) throw new Error(o.error.message || 'Meta error'); return typeof o.ad_entities === 'string' ? JSON.parse(o.ad_entities) : (o.ad_entities || []); };
+dash.loader('meta_daily', {description: 'Ответ Meta в виде строк по дням', fn: ({answer}) => {
+  const o = typeof answer === 'string' ? JSON.parse(answer) : answer;
+  const rows = typeof o.ad_entities === 'string' ? JSON.parse(o.ad_entities) : (o.ad_entities || []);
+  return rows.map((r) => ({day: r.date_start, spend: Number(r.amount_spent.value), impressions: Number(r.impressions || 0), link_click: Number(r.link_click || 0), landing_page_view: Number(r.landing_page_view || 0)}));
+}});
+dash.loader('meta_ads', {description: 'Ответ Meta в виде строк: объявление за день', fn: ({answer}) => {
+  const o = typeof answer === 'string' ? JSON.parse(answer) : answer;
+  const rows = typeof o.ad_entities === 'string' ? JSON.parse(o.ad_entities) : (o.ad_entities || []);
+  return rows.filter((r) => r.adset_id).map((r) => ({day: r.date_start, adset_id: r.adset_id, adset_name: r.adset_name, status: r.effective_status, spend: Number(r.amount_spent.value), impressions: Number(r.impressions || 0), link_click: Number(r.link_click || 0), landing_page_view: Number(r.landing_page_view || 0)}));
+}});
+dash.calc('daily', {title: 'Показатели по дням', description: 'Meta и регистрации Тильды с меткой рекламы по дате', inputs: ['tilda_daily', 'meta_daily'], fn: (tilda_daily, meta_daily) => tilda_daily.map((t) => {
+  const m = meta_daily.find((x) => x.day === t.day) || {spend: 0, impressions: 0, link_click: 0};
+  const regs = Number(t.meta_leads), ses = Number(t.meta_sessions), spend = Number(m.spend), imp = Number(m.impressions), clk = Number(m.link_click);
+  return {day: t.day, regs, sessions: ses, spend, impressions: imp, clicks: clk, cpl: regs ? spend / regs : null, cr: ses ? regs / ses : null, ctr: imp ? clk / imp : null, cpm: imp ? spend / imp * 1000 : null};
+})});
+dash.calc('kpi', {title: 'Итоги воронки', description: 'Суммы за дни, по которым есть данные Тильды', inputs: ['daily', 'tilda_daily'], fn: (daily, tilda_daily) => {
+  const s = (k) => d3.sum(daily, (r) => r[k]);
+  const spend = s('spend'), imp = s('impressions'), clk = s('clicks'), ses = s('sessions'), regs = s('regs');
+  return [{period: d3.min(daily, (r) => r.day) + '/' + d3.max(daily, (r) => r.day), spend: Math.round(spend * 100) / 100, impressions: imp, clicks: clk, sessions: ses, regs, cpm: Math.round(spend / imp * 1000 * 100) / 100, ctr: Math.round(clk / imp * 10000) / 10000, cpc: Math.round(spend / clk * 100) / 100, cr: Math.round(regs / ses * 1000) / 1000, cpl: Math.round(spend / regs * 100) / 100, as_of: tilda_daily[0].as_of}];
+}});
+dash.calc('sources', {title: 'Свод по источникам', description: 'Визиты и реги по UTM; бюджет рекламы Meta за те же дни', inputs: ['tilda_sources', 'kpi'], fn: (tilda_sources, kpi) => tilda_sources.map((r) => {
+  const sessions = Number(r.sessions), leads = Number(r.leads), spend = r.kind === 'meta' ? kpi[0].spend : null;
+  return {source: r.source, sessions, leads, cr: sessions ? leads / sessions : null, spend, cpl: spend != null && leads ? spend / leads : null};
+})});
+dash.calc('creatives', {title: 'Креативы', description: 'Расход Meta по группам за дни Тильды, реги по ID группы из UTM, копии объединены по названию', inputs: ['meta_ads', 'tilda_creatives', 'tilda_daily'], fn: (meta_ads, tilda_creatives, tilda_daily) => {
+  const days = new Set(tilda_daily.map((r) => r.day));
+  const base = (n) => n.replace(/(\s+—\s+Копия)+$/, '');
+  const leadsById = new Map(tilda_creatives.map((r) => [String(r.adset_id), Number(r.leads)]));
+  const g = d3.group(meta_ads, (r) => base(r.adset_name));
+  return [...g].map(([name, rows]) => {
+    const inDays = rows.filter((r) => days.has(r.day));
+    const spend = d3.sum(inDays, (r) => r.spend), clicks = d3.sum(inDays, (r) => r.link_click);
+    const ids = new Set(inDays.map((r) => r.adset_id));
+    const leads = d3.sum([...ids], (id) => leadsById.get(id) || 0);
+    const st = new Set(rows.map((r) => r.status));
+    const status = st.has('ACTIVE') ? 'Идёт' : (st.size === 1 && st.has('DISAPPROVED') ? 'Отклонён' : 'Пауза');
+    return {name, spend: Math.round(spend * 100) / 100, clicks, leads, cr: clicks ? leads / clicks : null, cpl: leads ? spend / leads : null, status};
+  }).sort((a, b) => (a.cpl ?? 1e9) - (b.cpl ?? 1e9));
+}});
+const num = (x) => Math.round(x).toLocaleString('ru-RU');
+const usd = (x) => x == null ? '—' : Number(x).toLocaleString('ru-RU', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const pct = (x, d = 1) => x == null ? '—' : (x * 100).toLocaleString('ru-RU', {maximumFractionDigits: d}) + '%';
+const fday = (s) => new Date(s + 'T12:00:00Z').toLocaleDateString('ru-RU', {day: 'numeric', month: 'short', timeZone: 'UTC'});
+const K = () => { const k = dash.data('kpi'); return k.status === 'ok' && k.data.length ? k.data[0] : null; };
+const txt = (name, f) => dash.draw(name, (el) => { const k = K(); el.textContent = k ? f(k) : '—'; });
+txt('period', (k) => { const [a, b] = k.period.split('/'); return fday(a) + ' – ' + fday(b); });
+txt('f_spend', (k) => usd(k.spend)); txt('f_cpm', (k) => usd(k.cpm)); txt('f_imp', (k) => num(k.impressions)); txt('f_ctr', (k) => pct(k.ctr, 2));
+txt('f_clk', (k) => num(k.clicks)); txt('f_cpc', (k) => usd(k.cpc)); txt('f_ses', (k) => num(k.sessions)); txt('f_cr', (k) => pct(k.cr));
+txt('f_regs', (k) => num(k.regs)); txt('f_cpl', (k) => usd(k.cpl));
+txt('foot', (k) => 'Снимок. Данные Тильды на ' + new Date(k.as_of).toLocaleString('ru-RU', {timeZone: 'Europe/Moscow', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) + ' МСК, учтены полные дни 28 октября – 1 ноября. Расход Meta на это же время.');
+const M = {regs: ['Регистрации', num], spend: ['Бюджет, $', usd], cpl: ['Цена реги, $', usd], cr: ['CR визит → рег', (v) => pct(v)], ctr: ['CTR', (v) => pct(v, 2)], cpm: ['CPM, $', usd]};
+let metric = 'regs';
+document.querySelectorAll('.mk-tabs button').forEach((b) => b.addEventListener('click', () => {
+  metric = b.dataset.m;
+  document.querySelectorAll('.mk-tabs button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  dash.draw('c_dyn');
+}));
+dash.draw('c_dyn', (el) => {
+  const g = dash.data('daily'); el.replaceChildren();
+  if (g.status !== 'ok' || !g.data.length) return;
+  const rows = g.data.filter((r) => r[metric] != null), fmt = M[metric][1];
+  const w = el.clientWidth || 600, h = 260, m = {t: 26, r: 10, b: 26, l: 10};
+  const x = d3.scaleBand(rows.map((r) => r.day), [m.l, w - m.r]).padding(.32);
+  const y = d3.scaleLinear([0, d3.max(rows, (r) => r[metric]) * 1.18], [h - m.b, m.t]);
+  const s = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`);
+  const tip = document.createElement('div'); tip.className = 'mk-tip'; tip.hidden = true; el.append(tip);
+  s.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', '#3a413d');
+  const color = metric === 'cpl' || metric === 'cpm' ? '#F0705A' : '#36D068';
+  const gs = s.selectAll('g.d').data(rows).join('g').attr('class', 'd');
+  gs.append('rect').attr('x', (r) => x(r.day)).attr('width', x.bandwidth()).attr('y', (r) => y(r[metric])).attr('height', (r) => y(0) - y(r[metric])).attr('rx', 4).attr('fill', color);
+  gs.append('text').attr('x', (r) => x(r.day) + x.bandwidth() / 2).attr('y', (r) => y(r[metric]) - 7).attr('text-anchor', 'middle').attr('fill', '#f4f7f5').attr('font-size', 13).text((r) => fmt(r[metric]));
+  gs.append('text').attr('x', (r) => x(r.day) + x.bandwidth() / 2).attr('y', h - 7).attr('text-anchor', 'middle').attr('fill', '#9fa8a3').attr('font-size', 12).text((r) => fday(r.day));
+  gs.on('pointermove', (ev, r) => { tip.textContent = `${fday(r.day)} · ${M[metric][0]}: ${fmt(r[metric])}`; const b = el.getBoundingClientRect(); tip.hidden = false; tip.style.left = Math.max(0, Math.min(ev.clientX - b.left + 10, b.width - tip.offsetWidth - 2)) + 'px'; tip.style.top = Math.max(0, ev.clientY - b.top - 40) + 'px'; }).on('pointerleave', () => { tip.hidden = true; });
+});
+const td = (tr, v, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = v; tr.append(c); };
+const cplCls = (v) => v == null ? 'dim' : (v <= 1 ? 'ok' : (v <= 2.5 ? 'mid' : 'bad'));
+dash.draw('b_src', (el) => {
+  const g = dash.data('sources'); el.replaceChildren(); if (g.status !== 'ok') return;
+  g.data.forEach((r) => { const tr = document.createElement('tr'); td(tr, r.source); td(tr, num(r.sessions)); td(tr, num(r.leads)); td(tr, pct(r.cr)); td(tr, r.spend == null ? '—' : usd(r.spend), r.spend == null ? 'dim' : ''); td(tr, usd(r.cpl), cplCls(r.cpl)); el.append(tr); });
+});
+dash.draw('b_cr', (el) => {
+  const g = dash.data('creatives'); el.replaceChildren(); if (g.status !== 'ok') return;
+  g.data.forEach((r) => { const tr = document.createElement('tr'); td(tr, r.name); td(tr, usd(r.spend)); td(tr, num(r.clicks)); td(tr, num(r.leads)); td(tr, pct(r.cr)); td(tr, usd(r.cpl), cplCls(r.cpl)); td(tr, r.status, r.status === 'Идёт' ? 'ok' : (r.status === 'Отклонён' ? 'bad' : 'dim')); el.append(tr); });
+});
+dash.draw('cr_note', (el) => {
+  const g = dash.data('tilda_creatives'); if (g.status !== 'ok') { el.textContent = '—'; return; }
+  const n = g.data.find((r) => r.adset_id === 'none');
+  el.textContent = n ? `Ещё ${num(Number(n.leads))} рег пришли без ID группы и не разнесены по креативам.` : '';
+});
+</script>
+</body></html>
